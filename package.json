@@ -12,7 +12,7 @@
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin img/* --out-dir='dist/img'",
+    "imagemin": "imagemin img/* --out-dir=\"dist/img\"",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
@@ -27,14 +27,10 @@
   },
   "homepage": "https://github.com/NarsimhaRaj/coursera-fullstack-react#readme",
   "devDependencies": {
-    "cssmin": "^0.4.3",
-    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
     "onchange": "^3.3.0",
     "parallelshell": "^3.0.1",
-    "rimraf": "^2.6.2",
-    "uglifyjs": "^2.4.11",
-    "usemin-cli": "^0.5.1"
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
